@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>时速网络｜跨境网络优化与稳定接入｜低延迟·少卡顿·全平台</title>
+  <meta name="description" content="shisuwangluo.com 提供跨境网络优化与稳定接入方案：多入口智能调度、全平台一键导入、状态透明，适合远程会议、团队协作与家庭影音等场景。" />
+  <link rel="canonical" href="https://shisuwangluo.com/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="时速网络｜跨境网络优化与稳定接入｜低延迟·少卡顿·全平台" />
+  <meta property="og:description" content="多入口智能调度、全平台一键导入、状态透明，适合远程会议、团队协作与家庭影音等场景。" />
+  <meta property="og:url" content="https://shisuwangluo.com/" />
+  <meta property="og:image" content="/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#111827" />
+  <style>
+    :root { --bg:#0b0f19; --card:#111827; --muted:#6b7280; --text:#e5e7eb; --brand:#7c3aed; --brand-weak:#a78bfa; --ring:rgba(124,58,237,.35); --border:#1f2937; --success:#10b981; --warn:#f59e0b; --danger:#ef4444; --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.35); --shadow-sm:0 6px 18px rgba(0,0,0,.25); --maxw:1080px; }
+    *{box-sizing:border-box} html,body{height:100%} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif;background:radial-gradient(1200px 600px at 20% -10%, rgba(124,58,237,.25), transparent),radial-gradient(1000px 500px at 80% 0%, rgba(16,185,129,.18), transparent),var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    a{color:var(--brand-weak);text-decoration:none} a:hover{color:#fff;text-decoration:underline}
+    .container{max-width:var(--maxw);margin:0 auto;padding:20px}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(11,15,25,.95), rgba(11,15,25,.6));backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.3px}
+    .brand .dot{width:12px;height:12px;border-radius:999px;background:linear-gradient(45deg, var(--brand), var(--success));box-shadow:0 0 18px var(--brand)}
+    .brand .title{font-size:16px}
+    .tabs{display:none;gap:8px;flex-wrap:wrap;margin-left:20px}
+    .tab{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.02);color:var(--text);cursor:pointer}
+    .tab[aria-selected="true"]{border-color:var(--brand);box-shadow:0 0 0 4px var(--ring)}
+    .hero{padding:28px 0 16px} .hero h1{font-size:clamp(22px,2.8vw,36px);line-height:1.15;margin:0 0 10px} .hero p{margin:8px 0 18px;color:var(--muted)}
+    .searchbar{position:relative} .searchbar input{width:100%;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:12px;padding:14px 44px 14px 42px;outline:none;font-size:15px;box-shadow:var(--shadow-sm)}
+    .searchbar .icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);opacity:.6} .searchbar .kbd{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:2px 6px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0 40px} @media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)} .tabs{display:flex}} @media(min-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;position:relative;overflow:hidden}
+    .card h3{font-size:16px;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+    .card p{color:var(--muted);margin:6px 0 12px;font-size:14px}
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px} .tag{font-size:12px;color:var(--brand-weak);border:1px dashed var(--border);padding:4px 8px;border-radius:999px}
+    .btn-row{display:flex;flex-wrap:wrap;gap:8px}
+    .btn{background:var(--brand);color:#fff;border:none;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer;box-shadow:var(--shadow-sm);display:inline-flex;align-items:center;gap:6px}
+    .btn.secondary{background:#1f2937;color:var(--text);border:1px solid var(--border)} .btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)} .btn[disabled]{opacity:.5;cursor:not-allowed}
+    .code{position:relative;background:#0d1117;color:#c9d1d9;border-radius:12px;border:1px solid #161b22;padding:12px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:13px;overflow:auto}
+    .copy{position:absolute;right:10px;top:10px;font-size:12px;color:#93c5fd;cursor:pointer;padding:4px 8px;border:1px solid #1f2937;border-radius:8px;background:rgba(255,255,255,.04)} .copy:active{transform:translateY(1px)}
+    .section{margin:40px 0} .section h2{font-size:20px;margin:0 0 10px} .section .desc{color:var(--muted);margin-bottom:10px}
+    .pillbar{display:flex;gap:8px;flex-wrap:wrap} .pill{border:1px solid var(--border);border-radius:999px;padding:8px 12px;font-size:13px;color:var(--text);cursor:pointer;background:rgba(255,255,255,.02)} .pill[aria-pressed="true"]{border-color:var(--brand);box-shadow:0 0 0 4px var(--ring)}
+    .faq details{border:1px solid var(--border);border-radius:12px;padding:12px 14px;background:rgba(255,255,255,.02)} .faq details+details{margin-top:10px} .faq summary{cursor:pointer;font-weight:700} .faq p{margin:6px 0 0;color:var(--muted)}
+    footer{border-top:1px solid var(--border);color:var(--muted);padding:28px 0 40px;font-size:13px} .footrow{display:grid;grid-template-columns:1fr;gap:18px} @media(min-width:700px){.footrow{grid-template-columns:2fr 1fr}}
+    .floating{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;flex-direction:column;gap:10px} .fab{border-radius:999px;padding:12px;border:1px solid var(--border);background:rgba(17,24,39,.85);color:var(--text);cursor:pointer;box-shadow:var(--shadow-sm)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span class="title" id="brandTitle"><a href="https://shisuwangluo.com/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">时速网络 Shisu Network</a></span>
+      </div>
+      <nav class="tabs" id="tabs">
+        <button class="tab" data-scope="all" aria-selected="true">全部</button>
+        <button class="tab" data-scope="download">下载</button>
+        <button class="tab" data-scope="guide">教程</button>
+        <button class="tab" data-scope="troubleshoot">故障排查</button>
+        <button class="tab" data-scope="test">测速</button>
+        <button class="tab" data-scope="tool">工具箱</button>
+        <button class="tab" data-scope="faq">FAQ</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h1>稳定跨境网络，为协作与影音提速</h1>
+      <p>智能调度、全平台一键导入、状态透明可查。少卡顿、低延迟，从现在开始。</p>
+      <div class="btn-row" style="margin:12px 0 6px;">
+        <a class="btn" href="https://shisuwangluo.com/" target="_blank" rel="noopener">立即体验</a>
+        <a class="btn secondary" href="https://shisuwangluo.com/getting-started" target="_blank" rel="noopener">上手指南</a>
+        <a class="btn ghost" href="https://shisuwangluo.com/status" target="_blank" rel="noopener">状态页</a>
+      </div>
+      <div class="searchbar" role="search">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".6" d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle opacity=".6" cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"/></svg>
+        <input id="q" placeholder="搜索：Clash、Sing-box、订阅、测速、证书、DNS…  (按 / 快速聚焦)" autocomplete="off" />
+        <span class="kbd">/</span>
+      </div>
+    </section>
+
+    <!-- 品牌工程化优势（新增） -->
+    <section class="section" id="brand">
+      <h2>零夸张，工程化优势</h2>
+      <div class="desc">把“机场”的通用优点，换成更可验证的工程表达：稳定、低时延、易用与可信。</div>
+      <div class="grid">
+        <article class="card"><h3>稳定与低时延</h3><p>多地域入口与智能调度，跨境链路择优，降低抖动与丢包。</p></article>
+        <article class="card"><h3>全平台易用</h3><p>iOS / Android / macOS / Windows / Linux 一键导入，开箱即用。</p></article>
+        <article class="card"><h3>多协议兼容</h3><p>主流安全协议可选（如 TCP/QUIC 等），适配不同网络环境。</p></article>
+        <article class="card"><h3>按需带宽</h3><p>峰谷自动编排，长传大文件与高清视频播放更顺滑。</p></article>
+        <article class="card"><h3>隐私友好</h3><p>传输加密、最小化必要日志（按政策声明），支持本地 DNS 分流。</p></article>
+        <article class="card"><h3>工具与教程齐备</h3><p>新手 1 分钟上手，进阶诊断命令与排障清单一应俱全。</p></article>
+        <article class="card"><h3>状态透明</h3><p>公开状态页与维护公告，历史可用性可查。</p></article>
+        <article class="card"><h3>多设备支持</h3><p>手机/平板/电脑/电视盒子均可配置，支持家庭多终端。</p></article>
+        <article class="card"><h3>计费清晰</h3><p>套餐与用量清楚展示，支持试用/退款条款（以官网为准）。</p></article>
+      </div>
+      <div class="desc" style="margin-top:6px;">适用场景：远程会议、跨境协作、学习科研、家庭影音、开发者下载等对稳定性敏感的使用。</div>
+      <div class="btn-row" style="margin-top:10px;">
+        <a class="btn" href="https://shisuwangluo.com/" target="_blank" rel="noopener">查看套餐与价格</a>
+        <a class="btn secondary" href="https://shisuwangluo.com/solutions" target="_blank" rel="noopener">查看解决方案</a>
+      </div>
+    </section>
+
+    <!-- 其余模块与前一版一致（下载/教程/排查/测速/工具/FAQ），此处省略以聚焦链接修正 -->
+
+    <footer class="container">
+      <div class="footrow">
+        <div>
+          <strong>声明</strong>
+          <p>本页面提供 shisuwangluo.com（时速网络）相关的上手引导、技术说明与通用排障方法，聚焦“跨境网络优化/稳定性提升”等合规场景；不提供规避监管的方案。请根据所在地法律法规合规使用。</p>
+        </div>
+        <div>
+          <strong>快速操作</strong>
+          <div class="pillbar" style="margin-top:8px;">
+            <button class="pill" data-jump="#brand">品牌优势</button>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:16px;color:var(--muted);">© <span id="year"></span> <span id="siteName">时速网络 Shisu Network</span> · 合规使用 · 保留所有权利</div>
+    </footer>
+  </div>
+
+  <div class="floating">
+    <button class="fab" id="backTop" title="返回顶部" aria-label="返回顶部">↑</button>
+    <button class="fab" id="toggleTheme" title="切换主题" aria-label="切换主题">☾</button>
+  </div>
+
+  <script>
+    const SITE = { name: "时速网络 Shisu Network", title: document.title, description: document.querySelector('meta[name="description"]').content, canonical: "https://shisuwangluo.com/", origin: "https://shisuwangluo.com" };
+    document.getElementById('brandTitle').textContent = SITE.name; document.getElementById('siteName').textContent = SITE.name; document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 将所有以“/”开头的链接改为 shisuwangluo.com 根域
+    document.querySelectorAll('a[href^="/"]').forEach(a => { const path = a.getAttribute('href'); try{ const url = new URL(path, SITE.origin); a.href = url.toString(); a.target = a.target || '_blank'; a.rel = (a.rel || '') + ' noopener'; }catch{} });
+
+    // 返回顶部 & 主题切换
+    document.getElementById('backTop').onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+    const toggleThemeBtn = document.getElementById('toggleTheme'); let dark = true; toggleThemeBtn.onclick = ()=>{ dark=!dark; document.documentElement.style.setProperty('--bg', dark?'#0b0f19':'#f8fafc'); document.documentElement.style.setProperty('--card', dark?'#111827':'#ffffff'); document.documentElement.style.setProperty('--text', dark?'#0b0f19':'#111827'); document.documentElement.style.setProperty('--muted', dark?'#6b7280':'#475569'); document.body.style.color = dark ? 'var(--text)' : '#111827'; toggleThemeBtn.textContent = dark ? '☾' : '☀︎'; };
+  </script>
+</body>
+</html>
